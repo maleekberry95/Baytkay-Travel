@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url(./nature10.JPG
+    );
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    /* background:rgba(104, 101, 101, 0.5) */
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    /* margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px; */
+    font-size: 17px;
+    font-weight: bold;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+    font-size: 19px;
+}
+ul li a:hover{
+    background-color:rgb(85, 201, 230);
+    color: rgb(5, 7, 5);
+}
+ul li.active a{
+    color: white;
+}
+.logo img{
+    float: left;
+    width: 112px;
+    height: auto;
+}
+.main{
+    margin: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title{
+    margin: 4rem;
+    text-align: center;
+   
+}
+.title h1{
+    color: rgb(228, 229, 240);
+    font-size: 70px;
+}
+
+.sub-head {
+    position: absolute;
+    top: 130%;
+    left: 45%;
+    transform: translate(-44%,-44%);
+    color: white;
+    font-size: 50px;
+
+}
+.vacation{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(245, 244, 238);
+    font-weight: bold;
+}
+.span{
+    color: rgb(235, 11, 59);
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.btn{
+    border: 3px solid #11e92d;
+    padding: 5px 35px;
+    color: rgb(228, 219, 219);
+    transition: 0.5 ease;
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+.btn:hover{
+    background-color: rgb(14, 189, 136)
+}
+.sub-menu {
+    display: none;
+    position: relative;
+}
+.sub-menu ul{
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu {
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .sub-menu ul li{
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+.place{
+    margin-top: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 0.3em;
+    margin-bottom: 1em;
+    padding-left: 45px;
+}
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.go {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgb(33, 36, 216);
+    
+}
+
+.search-icon{
+    width: 32px;
+    padding-top: 11px;
+    padding-right: 11px;
+}
+.place-holder {
+    padding-left: 15px;
+    height: 20px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px;
+    border-width: 3px;
+    width: 215px;
+    margin-top: 5px;
+    
+}
+.place-image{
+    display: flex;
+    gap: 23px;
+    padding: 0 1rem;
+    padding-left: 38px;
+   
+}
+
+.nature {
+    width: 250px;
+      height: 190px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        height: 100vh;
+    }
+    ul{
+        display: none;
+    }
+    .title{
+        margin: 0rem;
+    }
+    .title h1{
+        color: rgb(228, 229, 240);
+        font-size: 25px;
+    }
+    .button{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .vacation{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .place-image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nature{
+        width: 100%;
+        height: auto;
+        
+    }
+    .place{
+        flex-direction: column;
+    }
+    .buttons {
+        display: none;
+        flex-direction: column;
+    }
+}
